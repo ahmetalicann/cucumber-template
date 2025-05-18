@@ -16,7 +16,7 @@ public class Hooks {
     public void before(){
         String browser = Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest().getParameter("browser");
         properties = ConfigReader.initialize_Properties();
-        driver = DriverFactory.Initializ_Driver(browser);
+        driver = DriverFactory.initialize_Driver(browser);
     }
 
     @After
